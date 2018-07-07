@@ -19,8 +19,8 @@ import java.util.List;
 public class LandingPageApi {
 
     @Autowired
-
     Home_ownerService home_ownerService;
+    @Autowired
     HomeService homeService;
 
 
@@ -28,6 +28,19 @@ public class LandingPageApi {
 
     @GetMapping("list/home")
     public List<Home> getAllHome(){
+
+
+        Home home =new Home();
+        home.setHomeId(Long.valueOf(1231));
+        home.setAddress("baneshwor");
+        home.setDetails("dsafsad0");
+        home.setHome_owner_citizenship("123123123");
+        home.setLalpurja("safdsa");
+        home.setPhotos("photos");
+        home.setPhotos("213123");
+        home.setTotal_room("dafsf");
+        homeService.addHome(home);
+
         return homeService.ListHome();
     }
 

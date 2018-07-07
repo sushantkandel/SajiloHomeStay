@@ -29,7 +29,7 @@ public class Home_ownerService {
 
     public List<Home_owner> searchHome_Owner(String name){
 
-        List<Home_owner>home_owner=home_ownerRepository.findyByName(name);
+        List<Home_owner>home_owner=home_ownerRepository.findByName(name);
         return (home_owner);
 
 

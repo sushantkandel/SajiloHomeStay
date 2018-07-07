@@ -8,5 +8,5 @@ import java.util.List;
 
 public interface HomeRepository extends JpaRepository<Home,Long> {
 
-    public List<Home> findyByAddress(String address);
+    public List<Home> findByAddress(String address);
 }

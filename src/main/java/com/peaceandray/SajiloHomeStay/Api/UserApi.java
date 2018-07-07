@@ -18,6 +18,7 @@ import java.util.List;
 public class UserApi {
     @Autowired
     Home_ownerService home_ownerService;
+    @Autowired
     HomeService homeService;
 
 

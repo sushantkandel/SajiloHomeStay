@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface Home_ownerRepository extends JpaRepository<Home_owner,Long> {
 
-    public List<Home_owner> findyByName(String name);
+    public List<Home_owner> findByName(String name);
 
 
 }

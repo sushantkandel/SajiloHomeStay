@@ -3,13 +3,14 @@ package com.peaceandray.SajiloHomeStay.Model;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 
+import javax.persistence.*;
+
+@Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Table(name = "home_owner", schema = "", catalog = "")
 public class Home_owner {
 
     private  String ownerName;

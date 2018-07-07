@@ -16,6 +16,7 @@ public class HomeOwnerApi {
 @Autowired
 
 Home_ownerService home_ownerService;
+@Autowired
 HomeService homeService;
 
 /** Home_owner in Ownservices **/
@@ -43,7 +44,10 @@ HomeService homeService;
 
         homeService.deleteHome(homeId);
     }
-
+    @GetMapping("")
+    public String owner(){
+        return "owner";
+    }
     //Listing of owner home
 
     @GetMapping("list/home")
