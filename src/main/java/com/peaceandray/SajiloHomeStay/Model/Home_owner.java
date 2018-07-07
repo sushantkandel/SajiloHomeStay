@@ -3,8 +3,6 @@ package com.peaceandray.SajiloHomeStay.Model;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -18,6 +16,7 @@ public class Home_owner {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long homeOwnerId;
+    private  String name;
     private  String citizenship;
     private  String photos;
     private  String address;
