@@ -13,6 +13,7 @@ public class HomeService {
     HomeRepository homeRepository;
 public void addHome(Home home){
 
+
    homeRepository.save(home);
 }
 

@@ -16,12 +16,15 @@ public class Home {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long homeId;
     private String lalpurja;
-private  String address;
-private String total_room;
-private  String price;
-private  String details;
-private  String photos;
-private  String home_owner_citizenship;
+    private  String address;
+    private String total_room;
+    private  String price;
+    private  String details;
+    private  String photos;
+    private  String home_owner_citizenship;
+
+
+
 
 
 }

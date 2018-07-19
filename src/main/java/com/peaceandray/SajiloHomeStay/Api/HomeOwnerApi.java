@@ -5,7 +5,6 @@ import com.peaceandray.SajiloHomeStay.Model.Home_owner;
 import com.peaceandray.SajiloHomeStay.Service.HomeService;
 import com.peaceandray.SajiloHomeStay.Service.Home_ownerService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -52,6 +51,18 @@ HomeService homeService;
 
     @GetMapping("list/home")
     public List<Home> getAllHome(){
+
+        Home home=new Home();
+        home.setHomeId(Long.valueOf(321));
+        home.setAddress("chitwan");
+        home.setDetails("Hello baba ji");
+        home.setHome_owner_citizenship("54321");
+        home.setLalpurja("BinaryLal purja");
+        home.setPhotos("photos");
+        home.setTotal_room("12");
+        homeService.addHome(home);
+
+
         return homeService.ListHome();
     }
 
